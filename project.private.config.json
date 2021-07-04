@@ -1,0 +1,30 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/img-comparison-slider",
+          "pathName": "pages/img-comparison-slider",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/img-comparison-slider",
+          "pathName": "pages/img-comparison-slider/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

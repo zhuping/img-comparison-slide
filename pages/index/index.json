@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "img-comparison-slider": "../../components/img-comparison-slider/index"
+  }
+}

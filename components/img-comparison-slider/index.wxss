@@ -1,0 +1,80 @@
+.container {
+  position: relative;
+}
+
+.container .first {
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: normal;
+  font-size: 100%;
+
+  transform: translateX(calc(50% * -1));
+  transition: transform 0ms;
+}
+
+.container .first .first-overlay-container {
+  position: relative;
+  transform: translateX(50%);
+  transition: transform 0ms;
+}
+
+.container .first .first-overlay {
+  overflow: hidden;
+}
+
+.container .second {
+  position: relative;
+}
+
+.handle-container {
+  transform: translateX(50%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.divider {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.divider::after {
+  content: ' ';
+  display: block;
+  height: 100%;
+  border-left-width: 1rpx;
+  border-left-style: solid;
+  border-left-color: #fff;
+  box-shadow: none;
+}
+
+.handle {
+  pointer-events: none;
+  box-sizing: border-box;
+  margin-left: 1px;
+  transform: translateX(-0.5px);
+}
+
+.handle-icon {
+  width: 100rpx;
+  height: 42rpx;
+  opacity: 1;
+  transition: all 1s;
+  filter: drop-shadow(none);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='default-handle' width='16' viewBox='-8 -3 16 6' %3E %3Cpath d='M -5 -2 L -7 0 L -5 2 M 5 -2 L 7 0 L 5 2' fill='none' vector-effect='non-scaling-stroke' stroke='%23fff' /%3E %3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
